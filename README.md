@@ -1,4 +1,4 @@
-# Imgui_template_project
+# Template project for using the Dear Imgui Library with Makefile
 Template project using the Imgui library
 
 To compile this project example (only linux):
