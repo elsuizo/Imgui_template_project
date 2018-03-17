@@ -1,22 +1,14 @@
 # ------------------------------------------------
-# Makefile for Opencv projects
+# Makefile for Imgui projects with sdl and Opengl2
 # ------------------------------------------------
 # TODO(elsuizo: 2016-12-03) add debugg options
 # project name (generate executable with this name)
 TARGET   = out
 
 COMPILER=g++ -std=c++11
-# compiling flags here
-CFLAGS   = -std=c99 -Wall -I.
 
-# Opencv flags
-# CPPFLAGS = $(shell pkg-config --cflags opencv)
-# LDLIBS = $(shell pkg-config --libs opencv)
 LDLIBS = -lGL -ldl -lglut -lGLU `sdl2-config --libs`
 CPPFLAGS = `sdl2-config --cflags`
-# linking flags here
-LINKER   = g++ -o
-LFLAGS   = -Wall -I. -lm
 
 # Directories
 SRCDIR   = src
