@@ -7,7 +7,7 @@ TARGET   = out
 
 COMPILER=g++ -std=c++11
 
-LDLIBS = -lGL -ldl -lglut -lGLU `sdl2-config --libs`
+LDLIBS = -lGL -ldl -lGLU `sdl2-config --libs`
 CPPFLAGS = `sdl2-config --cflags`
 
 # Directories
